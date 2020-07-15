@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="StartupInvest.MainPage">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+        <!-- Place new controls here -->
+        <Image  Source = "logo.png" ></Image>
+        <Label FontSize="20" TextColor="Black" TextDecorations="Underline"  Text="Добро пожаловать в СтартапИнвест!" HorizontalOptions="Center"/>
+        <Label HorizontalOptions="Center" FontSize="18" Margin="15,0" Text="Авторизация"/>
+        <Label HorizontalOptions="Center" Text="Логин"/>
+        <Entry Placeholder="Введите логин:" FontSize="13"  HorizontalTextAlignment="Center" x:Name="Login"/>
+        <Label HorizontalOptions="Center" x:Name="Login123"/>
+        <Label HorizontalOptions="Center" Text="Пароль"/>
+        <Entry Placeholder="Введите пароль:" FontSize="13" HorizontalTextAlignment="Center" x:Name="Password"/>
+        <Button x:Name="login_button" BackgroundColor="DarkBlue" CornerRadius="10" Clicked="login_button_click" TextColor="White" Text="Войти123" AutomationProperties.IsInAccessibleTree="False"/>
+        <Label TextDecorations="Underline"  Margin="10,0" TextColor="Blue" HorizontalOptions="Center" Text="Нет аккаунта? Зарегистрируйтесь"/>
+    </StackLayout>
+
+</ContentPage>
